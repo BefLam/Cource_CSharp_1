@@ -1,23 +1,16 @@
-﻿int Yes (int Number)
-{
-    while (Number > 999)
-    {
-        Number = Number /= 10;
-    }
-    return Number = Number % 10; 
-}
-   
-bool No (int Number)
+﻿void Yes (int Number)
 {
     if (Number < 100)
     {
         Console.WriteLine("Третьей цифры нет");
-        return false;
+        return;
     }  
-    return true;
+    while (Number > 999)
+    {
+        Number = Number /= 10;
+    }
+   Console.WriteLine(Number % 10); 
 }
- int Number = Yes(int.Parse(Console.ReadLine()!));
-if (No(Number))
-{
-    Console.WriteLine(Yes (Number));
-}
+
+Yes(int.Parse(Console.ReadLine()!));
+

@@ -2,8 +2,6 @@
 {
     Console.WriteLine(A);
     int num1 = A / 10 % 10;
-    int num2 = 2;
-    if (num1 > num2) return num1;
     return num1;
 }
 
